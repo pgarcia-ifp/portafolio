@@ -1,0 +1,149 @@
+:root {
+    /* Aquí hi van les variables */
+
+}
+
+* {
+    /* Aquí hi va el reset */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Futura';
+
+} 
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura-Bold.woff2') format('woff2'),
+        url('fonts/Futura-Bold.woff') format('woff');
+
+    src: url('fonts/FuturaCondMedium.woff2'),
+    url('fonts/FuturaCondMedium.woff');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+    /* Aquí hi van les propietats generals */
+
+body {
+    background: white;
+    height: 70rem;
+}
+
+.cap {
+    height: 30rem;
+    background: silver;
+    padding: 2rem;
+    width: auto;
+}
+
+.cos {
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Futura-Bold';
+    font-size: 120px;
+    position: relative;
+    top: 4rem;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    top: 4rem;
+}
+
+li {
+    width: 28rem;
+    height: 30rem;
+    background: black;
+    margin: 1rem;
+    float: left;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    line-height: 56rem;
+    font-size: 30px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a::hover {
+    olor: orange;
+}
+
+a:active {
+    olor: yellowgreen;
+}
+
+ul {
+    width: 90rem;
+    height: 96rem;
+    margin: auto;
+    background: white;
+    position: relative;
+    top: -10rem;
+}
+
+.peu {
+    height: 8rem;
+    background: silver;
+}
+
+li:hover {
+    opacity: 80%;
+}
+
+/* Aquí hi van les propietats responsives */
+
+@media (min-width:480px) 
+/* Aquí hi van les versions mòbils */
+
+{ 
+
+}
+
+@media (min-width:481px) and (max-width:1279px) {
+
+}
+
+@media (min-width:1280px) {
+    body {
+        ackground: orange;
+    }
+
+    h1 {
+        olor: black;
+    }
+
+    li {
+        ackground: white;
+        olor: black;
+    }
+}
+
+
+
+
+Mobilefirst
+Etructura de mòbil -  basica que surt per defecte 
+
+estructura d'escriptori -- fer les nodificacions (columnes amb floats)
+
+feskopfirst
+
+estructura d'escriptori -- fer les modificacions (columnes amb floats)
+

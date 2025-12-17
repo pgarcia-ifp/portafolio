@@ -1,0 +1,67 @@
+body {
+    background: black;
+    font-family: Helvetica;
+}
+
+.menu {
+    height: 45px;
+    background-color:  yellow;
+}
+
+.logo {
+    width: 62px;
+    height: 48px;
+    background: black;
+    background-image: url(./img/logo.png);
+    background-size: cover;
+}
+
+.documentals .peliculas .series {
+    color: #FFF;
+    Float: left;
+    background: red;
+}
+
+.titulo {
+    height: 50px;
+    background-color: red;
+    color: white;
+}
+
+pelis {
+    width: 150px;
+    height: 200px;
+    background: orange;
+    position: absolute;
+    top: 200px;
+    float: left;
+    margin: 5px
+}
+
+.carteleria {
+    width: 20%;
+    height: 200px;
+    float: left;
+    margin: 0 0 10px;
+}
+
+.imatge {
+    background-image: url(./img/1982Koyaanisqatsi.jpg);
+    width: 150px;
+    height: 200px;
+    margin: 5px;
+}
+
+
+
+.i2 {
+    background-image: url(./img/2004YTuQueSabes.jpg);
+}
+
+.i3 {
+    background-image: url(./img/2005Earthlings.jpg);
+}
+
+.i4 {
+    background-image: url(./img/2007Helvetica.jpg);
+}
