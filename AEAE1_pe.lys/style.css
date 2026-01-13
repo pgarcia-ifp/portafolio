@@ -1,67 +1,130 @@
 body {
-    background: black;
-    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+    background:#222;
 }
 
-.menu {
-    height: 45px;
-    background-color:  yellow;
-}
-
-.logo {
-    width: 62px;
-    height: 48px;
-    background: black;
-    background-image: url(./img/logo.png);
-    background-size: cover;
-}
-
-.documentals .peliculas .series {
-    color: #FFF;
-    Float: left;
-    background: red;
-}
-
-.titulo {
-    height: 50px;
-    background-color: red;
-    color: white;
-}
-
-pelis {
-    width: 150px;
-    height: 200px;
-    background: orange;
-    position: absolute;
-    top: 200px;
+.fitxa {
+    height: 300px;
+    width: 175px;
+    margin: 10px;
     float: left;
-    margin: 5px
-}
-
-.carteleria {
-    width: 20%;
-    height: 200px;
-    float: left;
-    margin: 0 0 10px;
 }
 
 .imatge {
-    background-image: url(./img/1982Koyaanisqatsi.jpg);
-    width: 150px;
-    height: 200px;
-    margin: 5px;
+    width: 175px;
+    height: 260px;
+    border-radius: 5px;
 }
 
-
-
-.i2 {
-    background-image: url(./img/2004YTuQueSabes.jpg);
+.titol {
+    width: 100%;
+    height: 20px;
+    margin: 0;
 }
 
-.i3 {
-    background-image: url(./img/2005Earthlings.jpg);
+.any {
+    width: 50%;
+    height: 20px;
+    margin: 0;
+    float: left;
 }
 
-.i4 {
-    background-image: url(./img/2007Helvetica.jpg);
+.tipus {
+    width: 50%;
+    height: 20px;
+    margin: 0;
+    float: left;
+    text-align: right;
+}
+
+.primera {background-image:url(img/1982Koyaanisqatsi.jpg);}
+.segona {background-image:url(img/2004YTuQueSabes.jpg);}
+.tercera {background-image:url(img/2005Earthlings.jpg);}
+.quarta {background-image:url(img/2007Helvetica.jpg);}
+.cinquena {background-image:url(img/2007Sicko.jpg);}
+.sisena {background-image:url(img/2008Zeitgeist2.jpg);}
+.setena {background-image:url(img/2009ArtAndCopy.jpg);}
+.vuitena {background-image:url(img/2009Home.jpg);}
+.novena {background-image:url(img/2009RipARemixManifesto.jpg);}
+.desena {background-image:url(img/2010ComprarTirarComprar.jpg);}
+.onzena {background-image:url(img/2010InsideJob.jpg);}
+.dotzena {background-image:url(img/2011LaDoctrinaDeShock.jpg);}
+.tretzena {background-image:url(img/2012SearchingForSugarMan.jpg);}
+.catorzena {background-image:url(img/2012TheActOfKilling.jpg);}
+.quinzena {background-image:url(img/2013ElEspirituDel45.jpg);}
+
+h2 {
+    clear: both;
+    margin: 50px 0 0 0;
+}
+
+.peli {
+    background: red;
+}
+
+.serie {
+    background: yellow;
+}
+
+.documental {
+    background:blue;
+}
+
+.vista {
+    filter: grayscale(100%);
+    
+}
+
+.fitxa:hover {
+    opacity: 50%;
+}
+
+.navegacio {
+    height: 50px;
+    background: url(../img/quasinegre.png);
+    position: fixed;
+    z-index: 9999999999999999999999999999999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+.navegacio img {
+    float: left;
+    margin: 5px 20px;
+}
+
+.intern {
+    width: 400px;
+    float: left;
+}
+.extern {
+
+    width: 400px;
+    float: right;
+}
+
+li {
+    float: left;
+    margin: 0 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:link {
+    color: #fff;
+}
+a:hover {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:active {
+    color: #fff;
 }

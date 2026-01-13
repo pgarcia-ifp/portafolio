@@ -3,15 +3,6 @@
 
 }
 
-* {
-    /* Aquí hi va el reset */
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Futura';
-
-} 
-
 @font-face {
     font-family: 'Futura';
     src: url('fonts/Futura-Bold.woff2') format('woff2'),
@@ -25,16 +16,29 @@
     font-display: swap;
 }
 
+* {
+    /* Aquí hi va el reset */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Futura';
+} 
+
+html{
+    height: 100%;
+}
+
+
     /* Aquí hi van les propietats generals */
 
 body {
     background: white;
-    height: 70rem;
+    height:;
 }
 
 .cap {
     height: 30rem;
-    background: silver;
+    background: linear-gradient(180deg,rgba(79, 145, 76, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     padding: 2rem;
     width: auto;
 }
@@ -46,17 +50,27 @@ body {
 h1 {
     text-align: center;
     font-family: 'Futura-Bold';
-    font-size: 120px;
+    color: white;
+    font-size: 130px;
     position: relative;
-    top: 4rem;
-    
+    top: 3.5rem;
+    animation: cambioColores 7s infinite alternate;
 }
 
 h2 {
     text-align: center;
-    font-size: 28px;
+    color: white;
+    font-size: 32px;
     position: relative;
-    top: 4rem;
+    top: 5rem;
+}
+
+ul {
+    height: 96rem;
+    margin: auto;
+    background: white;
+    position: relative;
+    top: -10rem;
 }
 
 li {
@@ -70,6 +84,21 @@ li {
     text-align: center;
     line-height: 56rem;
     font-size: 30px;
+    background-size: cover;
+}
+
+.horari {background-image: url(img/horari.png);}
+.feedly {background-image: url(img/feedly.png);}
+.watchmen {background-image: url(img/watchmen.png);}
+.dames {background-image: url(img/dames.png);}
+.ifpagram {background-image: url(img/ifpagram.png);}
+.photoshop {background-image: url(img/photoshop.png);}
+.floreta {background-image: url(img);}
+.float {background-image: url(img);}
+.progres {background-image: url(img);}
+
+.horari:hover {
+    transform: scale(1.02);
 }
 
 a:visited {
@@ -89,53 +118,91 @@ a:active {
     olor: yellowgreen;
 }
 
-ul {
-    width: 90rem;
-    height: 96rem;
-    margin: auto;
-    background: white;
-    position: relative;
-    top: -10rem;
-}
 
 .peu {
-    height: 8rem;
-    background: silver;
+    height: 16rem;
+    background: linear-gradient(360deg,rgba(79, 145, 76, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    margin-bottom:0;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Futura-Bold';
+    color: #339966;
+    font-size: 80px;
+    position: relative;
+    top: 2rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.correo,.telf {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 15%;
+    background-size: cover;
+    margin: 0;
+    float: none;
+}
+
+.correo:hover, .telf:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.correo {
+    background-image: url(img/correo.png);
+}
+
+.telf {
+    background-image: url(img/wsp.png);
 }
 
 li:hover {
-    opacity: 80%;
+    opacity: 90%;
 }
 
-/* Aquí hi van les propietats responsives */
+/* --------------Aquí hi van les propietats responsives------------------------------------------------- */
 
-@media (min-width:480px) 
-/* Aquí hi van les versions mòbils */
-
-{ 
-
-}
-
-@media (min-width:481px) and (max-width:1279px) {
-
-}
-
-@media (min-width:1280px) {
-    body {
-        ackground: orange;
+@media (max-width:480px) { /* Aquí hi van les versions mòbils petites a una columna*/
+    ul {
+        width: 100%;
     }
+}
 
-    h1 {
-        olor: black;
+@media (min-width:481px) and (max-width:960px) { /* Aquí hi van les versions mòbils normals a una columna*/
+    ul {
+        width: 30rem;
     }
+}
 
-    li {
-        ackground: white;
-        olor: black;
+@media (min-width:961px) and (max-width:1440px) { /* Aquí hi van les versions a dos columnes*/
+    ul {
+        width: 60rem;
     }
 }
 
 
+@media (min-width:1441px) { /* Aquí hi van les versions a pantalla completa amb tres columnes*/
+    ul {
+        width: 90rem;
+    }
+}
+
+@keyframes cambioColores {
+    0%   { color: #ffffff; }
+    30%  { color: #ccff33; }
+    60%  { color: #99ff66; }
+    90%  { color: #66cc99; }
+    90%  { color: #339966; }
+    100% { color: #ffffff; }
+}
 
 
 Mobilefirst
