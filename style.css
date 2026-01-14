@@ -66,7 +66,7 @@ h2 {
 }
 
 ul {
-    height: 96rem;
+    overflow: hidden;
     margin: auto;
     background: white;
     position: relative;
@@ -93,12 +93,16 @@ li {
 .dames {background-image: url(img/dames.png);}
 .ifpagram {background-image: url(img/ifpagram.png);}
 .photoshop {background-image: url(img/photoshop.png);}
-.floreta {background-image: url(img);}
-.float {background-image: url(img);}
-.progres {background-image: url(img);}
+.floreta {background-image: url(img/floreta.png);}
+.float {background-image: url(img/float.png);}
+.progres {background-image: url(img/progres.png);}
 
-.horari:hover {
+:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres):hover {
     transform: scale(1.02);
+}
+
+:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres) {
+    transition:0.3s;
 }
 
 a:visited {
@@ -174,11 +178,18 @@ li:hover {
     ul {
         width: 100%;
     }
+
+    h1 {
+        font-size: 60px;
+    }
 }
 
 @media (min-width:481px) and (max-width:960px) { /* Aquí hi van les versions mòbils normals a una columna*/
     ul {
         width: 30rem;
+    }
+        h1 {
+        font-size: 70px;
     }
 }
 
