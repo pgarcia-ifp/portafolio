@@ -5,11 +5,25 @@
 
 @font-face {
     font-family: 'Futura';
-    src: url('fonts/Futura-Bold.woff2') format('woff2'),
-        url('fonts/Futura-Bold.woff') format('woff');
+    src: url('fonts/Futura-Bold.woff2') format('woff2'), url('fonts/Futura-Bold.woff') format('woff'); 
 
-    src: url('fonts/FuturaCondMedium.woff2'),
-    url('fonts/FuturaCondMedium.woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura-lleugera';
+    src: url('fonts/FuturaCondMedium.woff2') format('woff2'), url('fonts/FuturaCondMedium.woff') format('woff'); 
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('fonts/Baskervville-Regular.woff2') format('woff2'), url('fonts/Baskervville-Regular.woff') format('woff');
 
     font-weight: normal;
     font-style: normal;
@@ -51,7 +65,7 @@ h1 {
     text-align: center;
     font-family: 'Futura-Bold';
     color: white;
-    font-size: 130px;
+    font-size: 150px;
     position: relative;
     top: 3.5rem;
     animation: cambioColores 7s infinite alternate;
@@ -59,10 +73,29 @@ h1 {
 
 h2 {
     text-align: center;
+    font-family: 'Baskervville';
+    font-weight: 500;
     color: white;
-    font-size: 32px;
+    font-size: 40px;
     position: relative;
-    top: 5rem;
+    top: 3.5rem;
+}
+
+.opcions {
+    display: flex;
+    justify-content: right;
+    gap: 3rem;
+    margin-top: -1rem;
+    right: 2rem;
+    position: relative;
+}
+
+h3, h4 {
+    color: white;
+    font-family: 'Futura-Bold';
+    font-size: 16px;
+    top: -14rem;
+    position: relative;
 }
 
 ul {
@@ -115,7 +148,7 @@ a:link {
 }
 
 a::hover {
-    olor: orange;
+    olor: yellowgreen;
 }
 
 a:active {
@@ -129,7 +162,7 @@ a:active {
     margin-bottom:0;
 }
 
-h3 {
+h5 {
     text-align: center;
     font-family: 'Futura-Bold';
     color: #339966;
@@ -156,17 +189,13 @@ h3 {
 }
 
 .correo:hover, .telf:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
+    transition:0.3s;
     opacity: 0.8;
 }
 
-.correo {
-    background-image: url(img/correo.png);
-}
-
-.telf {
-    background-image: url(img/wsp.png);
-}
+.correo {background-image: url(img/correo.png);}
+.telf {background-image: url(img/wsp.png);}
 
 li:hover {
     opacity: 90%;
@@ -180,7 +209,11 @@ li:hover {
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 80px;
+    }
+
+     h5 {
+        font-size: 30px;
     }
 }
 
@@ -189,7 +222,7 @@ li:hover {
         width: 30rem;
     }
         h1 {
-        font-size: 70px;
+        font-size: 100px;
     }
 }
 
