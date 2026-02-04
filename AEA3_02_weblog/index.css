@@ -1,6 +1,9 @@
+* {
+  font-family: Helvetica, Arial, Sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: Helvetica;
 }
 
 h1 {
@@ -51,7 +54,143 @@ li {
 .dreta {
     background-color: yellowgreen;
 }
+
 p {
     text-indent: 50px;
     padding: 10px;
 }
+
+
+
+
+
+/* Menù hamburguesa*/
+
+#alternador {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#alternador label {
+  width: 5rem;
+  height: 4em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  cursor:pointer;
+  padding-top: 1rem;
+  transition: all .5s ease;
+}
+
+#alternador b {
+  display: block;
+  width: 4rem;
+  height: 0.5rem;
+  background: black;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  line-height: 2rem;
+}
+
+
+#alternador input[type="checkbox"] {
+  visibility: hidden;
+}
+
+#alternador ul {
+  background: orange;
+  margin-top: 4em;
+  padding: 0;
+  background: white;
+  width: 10rem;
+}
+
+#alternador li {
+  list-style-type: none;
+  background: purple;
+  border: 1px solid white;
+  line-height: 3rem;
+  padding: 0;
+  width: 10rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transform: scale(120%);
+  margin: 0 auto;
+  float: none;
+  height: 3rem;
+
+    
+}
+
+#alternador a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#alternador li:hover {
+  box-shadow: inset 0 5px 5px violet;
+}
+
+#alternador .desplega {
+  position: absolute;
+  left: -12em;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+#alternador h1 {
+  text-align: center;
+}
+
+#alternador input[type=checkbox]:checked+label {
+  opacity: 1;
+}
+
+#alternador input[type=checkbox]:checked+label~.desplega{
+  left: 0;
+}
+
+
+
+
+
+/* Elements responsius*/
+
+    @media (max-width:480px) {
+        #alternador {
+            display: block;
+        }
+        
+        .menuhoritzontal {
+            display: none;
+        }
+    }
+
+     @media (min-width:481px) and (max-width:1279px) {
+        #alternador {
+            display: block;
+        }
+
+        .menuhoritzontal {
+            display: none;
+        }
+    }
+
+     @media (min-width:1280px) {
+        #alternador {
+            display: none;
+        }
+        
+        .menuhoritzontal {
+            display: block;
+        }
+    }
+
+
