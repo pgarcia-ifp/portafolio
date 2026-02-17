@@ -61,6 +61,23 @@ body {
     
 }
 
+.logo {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 1rem;
+    left: 3.4rem;
+    background-image: url(img/smiles.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo:hover {
+    transform: scale(1.04);
+    transition:0.3s;
+}
+
 h1 {
     text-align: center;
     font-family: 'Futura-Bold';
@@ -120,6 +137,8 @@ li{
     background-size: cover;
 }
 
+/* IMG-1*/
+
 .horari {background-image: url(img/horari.png);}
 .feedly {background-image: url(img/feedly.png);}
 .watchmen {background-image: url(img/watchmen.png);}
@@ -129,12 +148,21 @@ li{
 .floreta {background-image: url(img/floreta.png);}
 .float {background-image: url(img/float.png);}
 .progres {background-image: url(img/progres.png);}
+.turtle {background-image: url(img/turtle.png);}
+.dracula {background-image: url(img/dracula.png);}
+.revista {background-image: url(img/scher.png);}
+.colors {background-image: url(img/colors.png);}
+.pizza {background-image: url(img/pizza.png);}
+.rosa {background-image: url(img/rosa.png);}
+.giftt {background-image: url(img/giftt.png);}
+.cartell {background-image: url(img/ferxxo.png);}
+.dualipa {background-image: url(img/dua.png);}
 
-:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres):hover {
+:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres, .turtle):hover {
     transform: scale(1.02);
 }
 
-:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres) {
+:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres, .turtle) {
     transition:0.3s;
 }
 

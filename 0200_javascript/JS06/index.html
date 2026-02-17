@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS06</title>
+</head>
+<body>
+    <style>
+        body {
+            font-size: sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 15rem;
+            line-height: 20rem;
+            color: white;
+        }
+
+        #verd,  #vermell,  #taronja {
+            width: 13rem;
+            height: 13rem;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+
+         #verd {
+            background-color: green;
+        }
+
+         #vermell {
+            background-color: red;
+        }
+
+         #taronja {
+            background-color: orange;
+        }
+
+        ul {
+            width: 18rem;
+            margin: 0;
+            padding: 0;
+            float: left;
+            position: relative;
+            top: 1rem;
+            left: 1rem;
+            list-style-type: none;
+            background-color: black;
+            border-radius: 6rem;
+        }
+
+        #txt {
+            width: 90rem;
+            height: 120rem;
+            margin: 10;
+            padding: 0;
+            float: left;
+            overflow: hidden;
+        }
+
+    </style>
+    <ul>
+        <li id="verd"></li>
+        <li id="taronja"></li>
+        <li id="vermell"></li>
+    </ul>
+    <p id="txt"></p>
+</body> 
+    <script type="text/javascript" language="javascript">
+        
+        // definin els events
+        document.getElementById("verd").addEventListener('click', verd);
+        document.getElementById("taronja").addEventListener('click', taronja);
+        document.getElementById("vermell").addEventListener('click', vermell);
+
+        // creem les funcions
+
+        function verd() {
+            document.body.style.backgroundColor="green";
+            document.getElementById("txt").innerHTML="ENDAVANT";
+            document.getElementById("verd").style.border="solid 10px white";
+            document.getElementById("taronja").style.border="solid 10px transparent";
+            document.getElementById("vermell").style.border="solid 10px transparent";
+            document.getElementById("verd").style.boxShadow="inset 20px 20px 20px rgb(255, 225, 0, 0.5)";
+        }
+
+        function taronja() {
+            document.body.style.backgroundColor="orange";
+            document.getElementById("txt").innerHTML="PREUCACIÓ";
+            document.getElementById("verd").style.border="solid 10px transparent";
+            document.getElementById("taronja").style.border="solid 10px white";
+            document.getElementById("vermell").style.border="solid 10px transparent";
+            document.getElementById("taronja").style.boxShadow="inset 20px 20px 20px rgb(0, 0, 255, 0.5)";
+            
+        }
+
+        function vermell() {
+            document.body.style.backgroundColor="red";
+            document.getElementById("txt").innerHTML="STOP";
+            document.getElementById("verd").style.border="solid 10px transparent";
+            document.getElementById("taronja").style.border="solid 10px transparent";
+            document.getElementById("vermell").style.border="solid 10px white";
+            document.getElementById("vermell").style.boxShadow="inset 20px 20px 20px rgb(255, 0, 225, 0.5)";
+        }
+    </script>
+</html>
