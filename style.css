@@ -123,7 +123,7 @@ ul {
     top: -10rem;
 }
 
-li{
+li {
     width: 28rem;
     height: 30rem;
     background: black;
@@ -135,6 +135,12 @@ li{
     line-height: 56rem;
     font-size: 30px;
     background-size: cover;
+}
+
+li a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /* IMG-1*/
@@ -157,12 +163,13 @@ li{
 .giftt {background-image: url(img/giftt.png);}
 .cartell {background-image: url(img/ferxxo.png);}
 .dualipa {background-image: url(img/dua.png);}
+.js01, .js02, .js03, .js04, .js05, .js06, .js07, .js08, .js09 { background-image: url(img/java.png);}
 
-:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres, .turtle):hover {
+:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres, .turtle, .dracula, .revista, .colors, .pizza, .rosa, .giftt, .cartell, .dualipa, .js01, .js02, .js03, .js04, .js05, .js06, .js07, .js08, .js09):hover {
     transform: scale(1.02);
 }
 
-:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres, .turtle) {
+:is(.horari, .feedly, .watchmen, .dames, .ifpagram, .photoshop, .floreta, .float, .progres, .turtle, .dracula, .revista, .colors, .pizza, .rosa, .giftt, .cartell, .dualipa, .js01, .js02, .js03, .js04, .js05, .js06, .js07, .js08, .js09) {
     transition:0.3s;
 }
 
