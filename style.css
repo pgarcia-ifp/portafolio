@@ -135,6 +135,7 @@ li {
     line-height: 56rem;
     font-size: 30px;
     background-size: cover;
+    overflow: hidden;
 }
 
 li a {
