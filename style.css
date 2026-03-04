@@ -6,7 +6,6 @@
 @font-face {
     font-family: 'Futura';
     src: url('fonts/Futura-Bold.woff2') format('woff2'), url('fonts/Futura-Bold.woff') format('woff'); 
-
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -15,7 +14,6 @@
 @font-face {
     font-family: 'Futura-lleugera';
     src: url('fonts/FuturaCondMedium.woff2') format('woff2'), url('fonts/FuturaCondMedium.woff') format('woff'); 
-
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -24,7 +22,6 @@
 @font-face {
     font-family: 'Baskervville';
     src: url('fonts/Baskervville-Regular.woff2') format('woff2'), url('fonts/Baskervville-Regular.woff') format('woff');
-
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -47,7 +44,6 @@ html{
 
 body {
     background: white;
-    height:;
 }
 
 .cap {
@@ -143,8 +139,6 @@ li a {
     width: 100%;
     height: 100%;
 }
-
-/* IMG-1*/
 
 .horari {background-image: url(img/horari.png);}
 .feedly {background-image: url(img/feedly.png);}
@@ -247,17 +241,19 @@ li:hover {
     h1 {
         font-size: 60px;
     }
-
+    
     h5 {
         font-size: 30px;
     }
 }
 
+
 @media (min-width:481px) and (max-width:960px) { /* Aquí hi van les versions mòbils normals a una columna*/
     ul {
         width: 30rem;
     }
-        h1 {
+    
+    h1 {
         font-size: 100px;
     }
 }
@@ -274,6 +270,32 @@ li:hover {
         width: 90rem;
     }
 }
+
+
+@media (max-width:624px) { /* Aquí hi van les versions mòbils petites a una columna*/
+
+    h1 {
+        font-size: 60px;
+    }
+    
+    h5 {
+        font-size: 30px;
+    }
+
+    ul {
+        width: 98%;
+        margin: 1%;
+    }
+
+    li {
+        width: 98%;
+        margin: 1%;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
 
 @keyframes cambioColores {
     0%   { color: #ffffff; }
@@ -294,3 +316,22 @@ feskopfirst
 
 estructura d'escriptori -- fer les modificacions (columnes amb floats)
 
+/*
+
+
+1 apps nadiues. apk ipa 
+    c
+    c++
+    java
+    phyton
+    swift
+    visualbasic
+    rust
+.
+
+2 web apps
+    pàginas web feta amb html ccs javascript
+.
+
+3 apps híbrides
+    pàginas web feta amb html ccs javascript però encapsulades amb un sistema d'encapsulament
